@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <title>Todo | app</title>
+</head>
+<body class="font-josefin">
+  <!-- Background Section -->
+  <div class="bg-gradient-custom bg-no-repeat flex justify-center items-center relative h-64">
+    <div class="flex space-x-40 md:space-x-72 items-center mb-28">
+      <h2 class="font-josefin text-3xl text-center text-white tracking-todo">TODO</h2>
+      <img src="../images/icon-moon.svg" alt="moon-icon" id="moon-icon" class="cursor-pointer w-6 h-6">
+    </div>
+
+    <!-- Todo Input Section -->
+    <div class="absolute top-28 flex justify-center items-center w-full max-w-lg px-4">
+      <div id="todo" class="flex flex-col space-y-4 w-full rounded-md p-4">
+        <!-- Todo Input 1 -->
+        <div class="flex items-center w-full p-2 mb-2 bg-white rounded-md">
+            <input type="radio" id="task2" name="task" class="cursor-pointer custom-radio form-radio text-blue-500 ml-5 mr-3">
+            <input type="text" placeholder="Create a new todo..." class="outline-none placeholder:font-josefin p-4 border-none rounded-md w-full h-12 bg-transparent">
+          </div>
+
+        <!-- Todo Input 2 -->
+        <div class="bg-white shadow-md rounded-md">
+          <div>
+              <div class="flex items-center w-full border-b border-gray-100 px-8 p-2">
+              <input type="radio" id="task2" name="task" class="cursor-pointer form-radio text-blue-500 mr-3">
+              <input type="text" placeholder="Add another todo..." class="outline-none placeholder:font-josefin p-4 border-none rounded-md w-full h-12 bg-transparent">
+            </div>
+            <hr class="line border-gray-100">
+
+            <div class="flex items-center w-full border-b border-gray-500 px-8 p-2">
+              <input type="radio" id="task3" name="task" class="cursor-pointer form-radio text-blue-500 mr-3">
+              <input type="text" placeholder="Another task..." class="outline-none placeholder:font-josefin p-4 border-none rounded-md w-full h-12 bg-transparent">
+            </div>
+            <hr class="line border-gray-100">
+
+            <div class="flex items-center w-full border-b border-gray-500 px-8 p-2">
+              <input type="radio" id="task3" name="task" class="cursor-pointer form-radio text-blue-500 mr-3">
+              <input type="text" placeholder="Another task..." class="outline-none placeholder:font-josefin p-4 border-none rounded-md w-full h-12 bg-transparent">
+            </div>
+            <hr class="line border-gray-100">
+          </div>
+
+          <div class="links mt-4 p-6 flex justify-between text-gray-500">
+            <h6>5 mins left</h6>
+            <div class="flex space-x-4">
+              <h6>All</h6>
+              <h6>Active</h6>
+              <h6>Complete</h6>
+            </div>
+            <h6>Clear Completed</65>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

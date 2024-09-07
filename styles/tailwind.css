@@ -1,0 +1,23 @@
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+ .attribution {
+    font-size: 11px;
+    text-align: center;
+ }
+
+ .attribution a {
+    color: hsl(228, 45%, 44%);
+ }
+
+input[type="radio"] {
+   transform: scale(1.7);
+}
+
