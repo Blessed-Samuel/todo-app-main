@@ -25,35 +25,23 @@
     <div class="absolute top-28 flex justify-center items-center w-full max-w-lg px-4">
       <div id="todo" class="flex flex-col space-y-4 w-full rounded-md p-4">
         <!-- Todo Input 1 -->
-        <div class="flex items-center w-full p-2 mb-2 bg-white rounded-md">
-            <input type="radio" id="task2" name="task" class="cursor-pointer custom-radio form-radio text-blue-500 ml-5 mr-3">
-            <input type="text" placeholder="Create a new todo..." class="outline-none placeholder:font-josefin p-4 border-none rounded-md w-full h-12 bg-transparent">
-          </div>
+        <div id="mainInput" class="flex items-center w-full p-2 mb-2 bg-white rounded-md">
+          <input type="radio" id="task2" name="task" class="cursor-pointer custom-radio form-radio text-blue-500 ml-5 mr-3">
+          <input type="text" placeholder="Create a new todo..." class="outline-none placeholder:font-josefin p-4 border-none rounded-md w-full h-12 bg-transparent">
+        </div>
 
         <!-- Todo Input 2 -->
         <div class="bg-white shadow-custom z-10  rounded-md">
-          <div>
-              <div class="flex items-center w-full border-b border-gray-100 px-8 p-2">
+          <div id="listNode">
+            <div class="flex items-center w-full border-b border-gray-100 px-8 p-2">
               <input type="radio" id="task2" name="task" class="cursor-pointer form-radio text-blue-500 mr-3">
               <input type="text" placeholder="Add another todo..." class="outline-none placeholder:font-josefin p-4 border-none rounded-md w-full h-12 bg-transparent">
-            </div>
-            <hr class="line border-gray-100">
-
-            <div class="flex items-center w-full border-b border-gray-500 px-8 p-2">
-              <input type="radio" id="task3" name="task" class="cursor-pointer form-radio text-blue-500 mr-3">
-              <input type="text" placeholder="Another task..." class="outline-none placeholder:font-josefin p-4 border-none rounded-md w-full h-12 bg-transparent">
-            </div>
-            <hr class="line border-gray-100">
-
-            <div class="flex items-center w-full border-b border-gray-500 px-8 p-2">
-              <input type="radio" id="task3" name="task" class="cursor-pointer form-radio text-blue-500 mr-3">
-              <input type="text" placeholder="Another task..." class="outline-none placeholder:font-josefin p-4 border-none rounded-md w-full h-12 bg-transparent">
             </div>
             <hr class="line border-gray-100">
           </div>
 
           <div class="links mt-4 p-6 flex justify-between text-gray-500">
-            <h6 class="cursor-pointer">5 mins left</h6>
+            <h6 class="cursor-pointer">5 items left</h6>
             <div class="mb-link space-x-4 hidden flex">
               <h6 class="cursor-pointer text-blue-700">All</h6>
               <h6 class="cursor-pointer">Active</h6>
