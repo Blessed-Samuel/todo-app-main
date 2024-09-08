@@ -16,7 +16,7 @@ window.addEventListener('resize', updateVisibility);
 const mbLinkMobile = document.querySelector('.mb-link-mobile');
 
 function updateMbVisibility() {
-    if (window.innerWidth <= 375) {
+    if (window.innerWidth <= 375 || 425) {
         mbLinkMobile.classList.toggle('hidden');
     } else {
         mbLinkMobile.classList.add('hidden');
@@ -25,6 +25,8 @@ function updateMbVisibility() {
 
 updateMbVisibility();
 window.addEventListener('resize', updateMbVisibility);
+
+// New List Addition Functions
 document.addEventListener("DOMContentLoaded", () => {
     const input = document.getElementById('mainInput');
     const todoList = document.getElementById('listNode');
