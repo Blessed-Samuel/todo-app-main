@@ -26,6 +26,10 @@ module.exports = {
 
       letterSpacing: {
         'todo': '0.3em'
+      },
+
+      boxShadow: {
+        'custom': '0 10px 90px rgba(0, 0, 0, 0.10)'
       }
     },
   },

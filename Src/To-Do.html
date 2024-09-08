@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="../styles/output.css">
   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
   <title>Todo | app</title>
+  <style>
+
+  </style>
 </head>
 <body class="font-josefin">
   <!-- Background Section -->
@@ -28,7 +31,7 @@
           </div>
 
         <!-- Todo Input 2 -->
-        <div class="bg-white shadow-md rounded-md">
+        <div class="bg-white shadow-custom z-10  rounded-md">
           <div>
               <div class="flex items-center w-full border-b border-gray-100 px-8 p-2">
               <input type="radio" id="task2" name="task" class="cursor-pointer form-radio text-blue-500 mr-3">
@@ -50,17 +53,25 @@
           </div>
 
           <div class="links mt-4 p-6 flex justify-between text-gray-500">
-            <h6>5 mins left</h6>
-            <div class="flex space-x-4">
-              <h6>All</h6>
-              <h6>Active</h6>
-              <h6>Complete</h6>
+            <h6 class="cursor-pointer">5 mins left</h6>
+            <div class="mb-link space-x-4 hidden flex">
+              <h6 class="cursor-pointer text-blue-700">All</h6>
+              <h6 class="cursor-pointer">Active</h6>
+              <h6 class="cursor-pointer">Complete</h6>
             </div>
-            <h6>Clear Completed</65>
+            <h6 class="cursor-pointer">Clear Completed</65>
           </div>
+        </div>
+
+        <div class="mb-link-mobile space-x-4 flex hidden justify-between items-center rounded-md shadow-custom p-8">
+            <h6 class="cursor-pointer text-blue-700">All</h6>
+            <h6 class="cursor-pointer">Active</h6>
+            <h6 class="cursor-pointer">Complete</h6>
         </div>
       </div>
     </div>
   </div>
+
+  <script src="../Src/To-Do.js"></script>
 </body>
 </html>
