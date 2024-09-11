@@ -21,7 +21,8 @@ module.exports = {
       },
 
       backgroundImage: {
-        'gradient-custom': 'url("../images/bg-desktop-light.jpg")'
+        'gradient-light': 'url("../images/bg-desktop-light.jpg")',
+        'gradient-dark': 'url("../images/bg-desktop-dark.jpg")'
       },
 
       letterSpacing: {

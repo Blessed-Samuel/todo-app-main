@@ -16,7 +16,7 @@ window.addEventListener('resize', updateVisibility);
 const mbLinkMobile = document.querySelector('.mb-link-mobile');
 
 function updateMbVisibility() {
-    if (window.innerWidth <= 375 || 425) {
+    if (window.innerWidth <= 375) {
         mbLinkMobile.classList.toggle('hidden');
     } else {
         mbLinkMobile.classList.add('hidden');
@@ -73,3 +73,51 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+// Dark theme background and icon switch
+const darkTheme = document.getElementsByTagName("body")[0];
+const moonIcon = document.getElementById("moon-icon");
+const sunIcon = document.getElementById("sun-icon");
+const banner = document.querySelector(".banner");
+
+// Check and apply theme from localStorage on page load
+document.addEventListener("DOMContentLoaded", () => {
+  const isDarkMode = localStorage.getItem("darkMode") === "true";
+
+  if (isDarkMode) {
+    darkTheme.classList.add("bg-slate-900");
+    banner.classList.add("bg-gradient-dark");
+    moonIcon.style.display = "none";
+    sunIcon.style.display = "inline";
+  } else {
+    moonIcon.style.display = "inline";
+    sunIcon.style.display = "none";
+  }
+});
+
+document.getElementById("theme-icon").addEventListener("click", () => {
+  // Toggle the dark mode class on the body
+  darkTheme.classList.toggle("bg-slate-900");
+
+  // Toggle the dark mode class on the banner
+  banner.classList.toggle("bg-gradient-dark");
+
+  // Check if dark mode is active
+  const isDarkMode = darkTheme.classList.contains("bg-slate-900");
+
+  // Update localStorage with the current theme state
+  localStorage.setItem("darkMode", isDarkMode);
+
+  // Toggle the visibility of the icons based on the mode
+  if (isDarkMode) {
+    moonIcon.style.display = "none";
+    sunIcon.style.display = "inline";
+  } else {
+    moonIcon.style.display = "inline";
+    sunIcon.style.display = "none";
+  }
+});
+
+
+
+

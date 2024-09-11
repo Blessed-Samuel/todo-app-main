@@ -13,12 +13,15 @@
 
   </style>
 </head>
-<body class="font-josefin">
+<body class="font-josefin bg-slate-900">
   <!-- Background Section -->
-  <div class="bg-gradient-custom bg-no-repeat flex justify-center items-center relative h-64">
+  <div class="banner bg-gradient-light  bg-gradient-dark bg-no-repeat flex justify-center items-center relative h-64">
     <div class="flex space-x-40 md:space-x-72 items-center mb-28">
       <h2 class="font-josefin text-3xl text-center text-white tracking-todo">TODO</h2>
-      <img src="../images/icon-moon.svg" alt="moon-icon" id="moon-icon" class="cursor-pointer w-6 h-6">
+      <div id="theme-icon">
+        <img src="../images/icon-sun.svg" alt="moon-icon" id="sun-icon" style="display: none;" class="cursor-pointer w-6 h-6">
+        <img src="../images/icon-moon.svg" alt="moon-icon" id="moon-icon" class="cursor-pointer w-6 h-6">
+      </div>
     </div>
 
     <!-- Todo Input Section -->

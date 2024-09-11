@@ -121,9 +121,9 @@
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
-.border-gray-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+.bg-slate-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -135,7 +135,11 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-gradient-custom {
+.bg-gradient-dark {
+  background-image: url("../images/bg-desktop-dark.jpg");
+}
+
+.bg-gradient-light {
   background-image: url("../images/bg-desktop-light.jpg");
 }
 
